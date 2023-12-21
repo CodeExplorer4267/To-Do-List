@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   width:100%;
+   min-height: 100vh;
+   background:linear-gradient(125deg,rgb(45, 45, 149),rgb(137, 44, 137));
+   padding:10px;
+   /* display: flex;
+   align-items: center; */
+}
+img{
+    height:69px;
+}
+.todoapp{
+    width:100%;
+    max-width:500px;
+    background-color: white;
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+    /* display: flex;
+    justify-content: center; */
+}
+.todoapp h1{
+    color: #782073;
+    display:flex;
+    align-items: center;
+}
+.todoapp h1 img{
+    margin-left: 20px;
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:13px;
+    border-radius: 25px;
+    background:#e68de1;
+    padding-left:20px;
+    margin-bottom: 25px;
+    border:3px solid #812a83;
+}
+#input-text{
+    flex:1;
+    border:none;
+    outline:none;
+    padding: 7px;
+    background: transparent;
+    border-radius: 25px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    width: 85px;
+    background: linear-gradient(125deg,rgb(65, 65, 180),rgb(165, 47, 165));
+    border-radius: 25px;
+    color: white;
+    padding: 7px;
+    cursor:pointer;
+    font-size: 15px;
+}
+ul li{
+    list-style: none;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px 50px;
+  font-size: 17px;
+  position: relative;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height:28px;
+    width:28px;
+    background: url("images.png");
+    border-radius:50%;
+    background-size: cover;
+    background-position: center;
+    top:2px;
+    left:8px;
+}
+ul li.checked{
+    color:#661cb1;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("tick.png");
+}
+ul li span{
+    position:absolute;
+    right: 45px;
+    top: 2px;
+    height:30px;
+    width:30px;
+    border-radius:14px;
+    text-align:center;
+}
+ul li span:hover{
+    background:#e68de1;
+}
